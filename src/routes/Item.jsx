@@ -16,7 +16,11 @@ function Item() {
       <p>Quantity: {product.quantity}</p>
       <p>Price: {product.price}</p>
       <p>Discount: {product.discount}</p>
-      <Link to={`/view/${id}/edit`} onClick={() => ctx.handlerEditProduct(id)}>
+      <Link
+        className={styles.link}
+        to={`/view/${id}/edit`}
+        onClick={() => ctx.handlerEditProduct(id)}
+      >
         ✏️
       </Link>
       <button

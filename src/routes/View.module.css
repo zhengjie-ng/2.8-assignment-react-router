@@ -8,12 +8,33 @@
   border-radius: 0.3rem;
   padding: 0.2rem;
   box-shadow: 1px 1px 10px 1px rgb(236, 236, 236);
+  border: 1px solid transparent;
 }
 
 .activeLink {
-  border: 2px solid rgb(147, 147, 240);
+  border: 2.5px solid rgb(147, 147, 240);
   margin: 0.3rem;
   border-radius: 0.3rem;
   padding: 0.2rem;
   box-shadow: 1px 1px 10px 1px rgb(236, 236, 236);
+}
+
+/* .link {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+
+.link:hover {
+  border-color: #646cff;
+}
+
+.link:focus,
+.link:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

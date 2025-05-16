@@ -18,7 +18,7 @@ function App() {
             <Route path="/view" element={<View />}>
               <Route index element={<ItemDefault />} />
               <Route path=":id" element={<Item />} />
-              <Route path=":id/:edit" element={<Edit />} />
+              <Route path=":id/edit" element={<Edit />} />
             </Route>
             <Route path="/add" element={<Add />} />
           </Route>
