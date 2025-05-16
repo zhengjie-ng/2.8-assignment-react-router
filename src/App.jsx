@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./routes/Header";
 import View from "./routes/View";
 import Add from "./routes/Add";
@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   return (
     <ProductProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Header />}>
             <Route path="/view" element={<View />}>
@@ -24,7 +24,7 @@ function App() {
           </Route>
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ProductProvider>
   );
 }
