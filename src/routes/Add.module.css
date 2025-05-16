@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px rgb(236, 236, 236);
+  border-radius: 0.3rem;
+}
+
+input {
+  width: 50%;
+  margin: 10px;
+}
+label {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+}
+
+.add {
+  background-color: #8187fd;
+  color: white;
+  border-radius: 0.3rem;
+}
